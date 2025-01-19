@@ -4,6 +4,7 @@
 This project offers a practical experience in building a three-tier web architecture on AWS. Participants will manually set up the required network, security, application, and database components to ensure the architecture is both available and scalable.
 
 ## Architecture Summary
+![Image](https://github.com/user-attachments/assets/bbb5b9b5-b5a0-47ca-bee8-bd2765e259b7)
 This design utilizes a public-facing Application Load Balancer to direct client traffic to EC2 instances in the web tier. These instances run Nginx servers configured to host a React.js website and forward API requests to an internal load balancer in the application tier. The internal load balancer then routes the requests to Node.js-based application servers. These servers interact with an Aurora MySQL multi-AZ database to process and return data to the web tier. Load balancing, health checks, and auto-scaling groups are implemented across each layer to ensure continuous availability.
 
 ## Implementation Steps
